@@ -24,28 +24,47 @@ const darkGrayishTheme = createTheme({
   },
 });
 
-// Sample projects array
+// Updated projects array with new data
 const projects = [
-    {
-      title: "Cinemica",
-      description: "A movie booking interface using HTML, CSS, and JavaScript.",
-    },
-    {
-      title: "Inventory Management System using JSON",
-      description: "Manages orders and sales and stores the record in a JSON file.",
-    },
-    {
-      title: "GDP Analysis",
-      description: "Analyzes GDP data of various countries over a specified period, providing insights into economic growth, trends, and factors influencing GDP changes.",
-    }
-  ];
-   
+  {
+    title: "Translator Bot Using Gemini API",
+    description: (
+      <>
+        <strong>Objective:</strong> Developed a multilingual translator bot capable of translating user input across multiple languages.
+        <br />
+        <strong>Tech Stack:</strong> Python, Googletrans API, Streamlit
+        <br />
+        <strong>Methodology:</strong> Integrated language detection and translation APIs, built a user-friendly interface for real-time text input and output.
+        <br />
+        <strong>Features:</strong> Supported over 10 languages, provided instant translation with copy/share options.
+        <br />
+        <strong>Link to Project:</strong> <a href="https://translatorbotz.streamlit.app/">Project Link</a>
+      </>
+    ),
+  },
+  {
+    title: "MNIST Handwritten Digit Recognizer",
+    description: (
+      <>
+        <strong>Objective:</strong> Classified handwritten digits (0–9) using the MNIST dataset.
+        <br />
+        <strong>Tech Stack:</strong> Python, TensorFlow, Keras, Matplotlib
+        <br />
+        <strong>Methodology:</strong> Built and trained a Convolutional Neural Network (CNN); applied image preprocessing, model tuning, and evaluation with confusion matrix and accuracy metrics.
+        <br />
+        <strong>Accuracy:</strong> Achieved over 98% accuracy on the test dataset.
+        <br />
+        <strong>Link to Project:</strong> <a href="https://github.com/Neil-05/MNIST-HANDWRITTEN-RECOGNIZER">Project Link</a>
+      </>
+    ),
+  },
+];
 
 const ThirdSection = () => {
   return (
     <ThemeProvider theme={darkGrayishTheme}>
       <Box
-       id = "project"
+        id="project"
         sx={{
           p: 4,
           backgroundColor: "#f5f5f5", // Light gray background
@@ -56,14 +75,13 @@ const ThirdSection = () => {
           alignItems: "center", // Centers content vertically if needed
         }}
       >
-        <Box
-        >
+        <Box>
           <Typography variant="h4" sx={{ mb: 4 }}>
             Projects
           </Typography>
 
           {/* Timeline Format */}
-          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", px: { xs: 2, sm: 4, md: 6 }}}>
+          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", px: { xs: 2, sm: 4, md: 6 } }}>
             {projects.map((project, index) => (
               <Box
                 key={index}

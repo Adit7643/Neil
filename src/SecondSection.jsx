@@ -105,11 +105,9 @@ const SecondSection = () => {
                     About Me
                 </Typography>
                 <Typography variant="body1" sx={{ mb: 4, fontSize: { xs: 16, md: 20 } }}>
-                    I am a dedicated professional with a background in machine learning and data analysis. I have hands-on expertise working with web applications, model training, and data visualization tools, alongside a strong focus on environmental sustainability projects.
-                </Typography>
-
+                I am a B.Tech CSE graduate with a solid foundation in machine learning, deep learning, and predictive modeling. Passionate about building intelligent systems that derive actionable insights from data using Python, scikit-learn, TensorFlow, and SQL. Experienced in developing and deploying machine learning models on real-world datasets to solve complex business problems and drive data-informed innovation </Typography>
                 <Typography variant="h5" sx={{ mb: 2 }}>
-                    Skills
+                    Skills And Technologies-
                 </Typography>
 
                 {/* Skill Cards */}
