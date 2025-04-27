@@ -3,6 +3,7 @@ import FirstSection from './FirstSection'; // Assuming this is your Home compone
 import Footer from './Footer';
 import ThirdSection from './ThirdSection';
 import SecondSection from './SecondSection';
+import FourthSection from './FourthSection'; // Assuming this is your Projects component
 import NavSection from './NavSection';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
+      <FourthSection />
       <Footer />
     </>
   );
