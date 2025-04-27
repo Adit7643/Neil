@@ -5,6 +5,8 @@ import ThirdSection from './ThirdSection';
 import SecondSection from './SecondSection';
 import FourthSection from './FourthSection'; // Assuming this is your Projects component
 import NavSection from './NavSection';
+import FifthSection from './FifthSection';
+import SixthSection from './SixthSection';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <FifthSection />
+      <SixthSection />
       <Footer />
     </>
   );
